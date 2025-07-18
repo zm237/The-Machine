@@ -1,0 +1,12 @@
+.pageInfo {
+  border: 1px solid #004080; 
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #636e72;
+}
+
+.infoText {
+  padding: 10px 0 0 0;
+  white-space: pre-wrap; /* Ensures text wraps correctly */
+}

@@ -1,0 +1,11 @@
+.header {
+    background-color: #004080; 
+    color: white;
+    text-align: center;
+    padding: 1.5em; 
+    border-radius: 0 0 30px 30px; /* Rounded corners at the bottom */
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}

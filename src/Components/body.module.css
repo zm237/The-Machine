@@ -1,0 +1,9 @@
+.bodyContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+    border: 1px solid #636e72; /* A subtle border color */
+
+    height: calc(100vh - 85px); /* Adjust height to fit the viewport */
+}

@@ -1,0 +1,96 @@
+.stock {
+    flex: 2;
+    border-radius: 4px;
+    padding: 20px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.laptop{
+    width: 700px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+.hands {
+    position: absolute;
+    width: 400px; /* Adjust size to fit the laptop keyboard */
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* So it doesn't block clicks */
+    
+    /* Start position: above the centered laptop */
+    transform: translateY(-150px);
+}
+
+.typing {
+    animation: type-on-keyboard 1.5s ease-in-out;
+}
+
+@keyframes type-on-keyboard {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(165px); /* Final down position */
+    }
+    40% {
+        transform: translateY(80px); /* Increased bounce up */
+    }
+    50% {
+        transform: translateY(165px);
+    }
+    60% {
+        transform: translateY(80px); /* Increased bounce up */
+    }
+    70% {
+        transform: translateY(165px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(165px); /* Hold at the final down position */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-150px); /* Return to start */
+    }
+}
+
+.indicator {
+    position: absolute;
+    width: 175px; /* Adjust size as needed */
+    height: 150px;
+    pointer-events: none; /* Make sure it's not clickable */
+
+    bottom: 42vh;
+    
+    /* Animation that lasts 2 seconds to match the setTimeout */
+    animation: fade-in-out 1.5s ease-in-out forwards;
+}
+
+/* Keyframes to fade the indicator in and out */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}

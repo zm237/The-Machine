@@ -1,0 +1,19 @@
+.userInfo {
+  border: 1px solid #004080; /* Navy blue border */
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #636e72; /* A lighter grey for contrast */
+}
+
+.earnings {
+  color: #2ecc71; /* Green for earnings */
+}
+
+.losses {
+  color: #e74c3c; /* Red for losses */
+}
+
+.heading {
+  padding: 10px 0 0 0;
+}
